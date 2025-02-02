@@ -32,13 +32,44 @@ bool test3()
 
     return candle.body_contains(-5.0);
 }
+
+//тест 1 'contains'
+bool test4()
+{
+    Candle candle{ 3.0, 7.0, 0.0, 4.0 };
+
+
+    return candle.contains(7.0);
+}
+
+//тест 2 'contains'
+bool test5()
+{
+    Candle candle{ 0.0, 0.0, 0.0, 0.0 };
+
+    return candle.contains(3.0) == false;;
+}
+
+//тест 3 'contains'
+bool test6()
+{
+    Candle candle(NULL, NULL, NULL, NULL);
+
+
+    return candle.contains(3.0) == false;
+}
+
+
+
+
 void initTests()
 {
   tests.push_back(test1);
   tests.push_back(test2);
   tests.push_back(test3);
-  //tests.push_back(test4);
-  //tests.push_back(test5);
+  tests.push_back(test4);
+  tests.push_back(test5);
+  tests.push_back(test6);
 }
 
 int launchTests()
