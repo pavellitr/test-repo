@@ -106,6 +106,29 @@ bool test12()
     return candle.body_size() == 0.0;
 }
 
+//тест 1 'is_red'
+bool test13()
+{
+    Candle candle{ 3.0, 7.0, 0.0, 2.0 };
+
+    return candle.is_red();
+}
+
+//тест 2 'is_red'
+bool test14()
+{
+    Candle candle{ 0.0, 7.0, 0.0, 2.0 };
+
+    return candle.is_red() == false;
+}
+
+//тест 3 'is_red'
+bool test15()
+{
+    Candle candle{ 0.0, 7.0, 0.0, 0.0 };
+
+    return candle.is_red() == false;
+}
 
 
 
@@ -124,6 +147,10 @@ void initTests()
   tests.push_back(test10);
   tests.push_back(test11);
   tests.push_back(test12);
+  tests.push_back(test13);
+  tests.push_back(test14);
+  tests.push_back(test15);
+
 
 
 }
