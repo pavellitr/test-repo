@@ -130,7 +130,29 @@ bool test15()
     return candle.is_red() == false;
 }
 
+//тест 1 'is_green'
+bool test16()
+{
+    Candle candle{ 3.0, 7.0, 0.0, 5.0 };
 
+    return candle.is_green();
+}
+
+//тест 2 'is_green'
+bool test17()
+{
+    Candle candle{ 3.0, 7.0, 0.0, 2.0 };
+
+    return candle.is_green() == false;
+}
+
+//тест 3 'is_green'
+bool test18()
+{
+    Candle candle{ NULL, 7.0, 0.0, INFINITY };
+
+    return candle.is_green();
+}
 
 
 void initTests()
@@ -150,7 +172,9 @@ void initTests()
   tests.push_back(test13);
   tests.push_back(test14);
   tests.push_back(test15);
-
+  tests.push_back(test16);
+  tests.push_back(test17);
+  tests.push_back(test18);
 
 
 }
