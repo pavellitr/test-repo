@@ -82,6 +82,29 @@ bool test9()
     return candle.full_size() == INFINITY;
 }
 
+//тест 1 'body_size'
+bool test10()
+{
+    Candle candle{ 3.0, 7.0, 0.0, 4.0 };
+
+    return candle.body_size() == 1.0;
+}
+
+//тест 2 'body_size'
+bool test11()
+{
+    Candle candle{ INFINITY, 7.0, 0.0, -INFINITY };
+
+    return candle.body_size() == INFINITY;
+}
+
+//тест 3 'body_size'
+bool test12()
+{
+    Candle candle{ NULL, 7.0, 0.0, NULL };
+
+    return candle.body_size() == 0.0;
+}
 
 
 
@@ -98,7 +121,9 @@ void initTests()
   tests.push_back(test7);
   tests.push_back(test8);
   tests.push_back(test9);
-
+  tests.push_back(test10);
+  tests.push_back(test11);
+  tests.push_back(test12);
 
 
 }

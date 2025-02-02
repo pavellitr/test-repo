@@ -13,7 +13,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,6 +36,10 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
@@ -43,7 +47,7 @@
               "RelativeDocumentMoniker": "..\\main.cpp",
               "ToolTip": "C:\\Users\\Jason\\Desktop\\TestRepo\\test-repo\\main.cpp",
               "RelativeToolTip": "..\\main.cpp",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAGMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-02T05:58:38.573Z",
               "EditorCaption": ""
