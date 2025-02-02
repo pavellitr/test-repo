@@ -7,29 +7,31 @@
 //массив всех тестов, который мы заполняем в функции initTests
 static std::vector<std::function<bool()>> tests;
 
-//тест 1
+//тест 1 'body_contains'
 bool test1()
 {
-  //пример какого-то теста
-  return 42 == (41 + 1); //passed
+    Candle candle{ 3.0, 7.0, 0.0, 4.0 };
+    return candle.body_contains(3.5);
 }
 
-//тест 2
+//тест 2 'body_contains'
 bool test2()
 {
-  //пример какого-то теста
-  return 42 != (41 + 1); //failed
+    Candle candle{ 0.0, 0.0, 0.0, 0.0 };
+    candle.open -= INFINITY;
+    candle.close = INFINITY;
+
+    return candle.body_contains(INFINITY);
 }
 
-//тест 3
+//тест 3 'body_contains'
 bool test3()
 {
-  Candle candle{ 0.0, 3.0, 3.0, 3.0 };
+    Candle candle{ 8.0, 10.0, 0.0, -15.0 };
+    candle.open = NULL;
 
-  //пример какого-то теста
-  return candle.high == 3.0;
+    return candle.body_contains(-5.0);
 }
-
 void initTests()
 {
   tests.push_back(test1);
