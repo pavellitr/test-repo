@@ -1,0 +1,3 @@
+C:/Users/Jason/Desktop/TestRepo/test-repo/build/CMakeFiles/testproj.dir
+C:/Users/Jason/Desktop/TestRepo/test-repo/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Jason/Desktop/TestRepo/test-repo/build/CMakeFiles/ZERO_CHECK.dir
